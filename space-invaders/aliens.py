@@ -5,7 +5,7 @@ HEIGHT_MAX = 300
 WIDTH_MAX = 250
 ALIEN_SPACING = 50
 
-alien_img = "alien1.gif"
+alien_img = "assets/alien1.gif"
 turtle.register_shape(alien_img)
 
 

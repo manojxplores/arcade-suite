@@ -1,7 +1,7 @@
 import turtle
 
-ship_img = "spaceship.gif"
-bullet_img = "bullet.gif"
+ship_img = "assets/spaceship.gif"
+bullet_img = "assets/bullet.gif"
 turtle.register_shape(bullet_img)
 turtle.register_shape(ship_img)
 

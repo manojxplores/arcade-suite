@@ -11,7 +11,7 @@ class MainPanel:
         self.main_frame = Frame(window)
         self.main_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
 
-        self.pokemon_bg = PhotoImage(file="pokedex_bg.png")
+        self.pokemon_bg = PhotoImage(file="assets/pokedex_bg.png")
         self.pokemon_img = PhotoImage(file="assets/1.png")
 
         self.canvas = Canvas(self.main_frame, width=270, height=480, bg="#DC0A2D")
@@ -268,13 +268,13 @@ class DataManager:
         self.current_pokemon_idx = 1
 
     def load_data(self):
-        with open("pokemon.json") as json_file:
+        with open("data/pokemon.json") as json_file:
             data = json.load(json_file)
             return data
 
     def load_new_data(self, new_pokemon):
         try:
-            with open("pokemon.json") as json_file:
+            with open("data/pokemon.json") as json_file:
                 data = json.load(json_file)
                 pokemon_list = list(data.keys())
                 self.current_pokemon_idx = pokemon_list.index(new_pokemon)

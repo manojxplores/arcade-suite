@@ -7,7 +7,7 @@ import time
 screen = Screen()
 screen.title("Space Invaders")
 screen.setup(width=600, height=600)
-screen.bgpic("bg.png")
+screen.bgpic("assets/bg.png")
 screen.listen()
 screen.tracer(0)
 
